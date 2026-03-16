@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shader Graphs_DistortionShader
+  m_Name: DistortionShader
   m_Shader: {fileID: -6465566751694194690, guid: fea016b88f0d44b5fafc16292b2bf29f,
     type: 3}
   m_ValidKeywords: []
