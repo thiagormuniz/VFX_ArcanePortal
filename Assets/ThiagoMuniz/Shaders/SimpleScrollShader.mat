@@ -7,22 +7,27 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: HeatDistortion
-  m_Shader: {fileID: -6465566751694194690, guid: 3f7626a280c834274a150b7af70a843f,
+  m_Name: SimpleScrollShader
+  m_Shader: {fileID: -6465566751694194690, guid: 45d3b1640f5574d988893ee0d8c1fc87,
     type: 3}
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - _ALPHATEST_ON
+  - _SPECULAR_SETUP
+  - _SURFACE_TYPE_TRANSPARENT
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2986
-  stringTagMap: {}
-  disabledShaderPasses: []
+  m_CustomRenderQueue: 3000
+  stringTagMap:
+    RenderType: Transparent
+  disabledShaderPasses:
+  - DepthOnly
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _Mask:
-        m_Texture: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: d4e24196d7303489c837265959f685fe, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -39,13 +44,28 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _HeatDistortion: 1
+    - _AlphaClip: 1
+    - _AlphaClipp: 0.01
+    - _Blend: 2
+    - _CastShadows: 1
+    - _Cull: 0
+    - _DstBlend: 1
     - _QueueControl: 0
-    - _QueueOffset: -14
+    - _QueueOffset: 0
+    - _ReceiveShadows: 1
+    - _SrcBlend: 5
+    - _Surface: 1
+    - _WorkflowMode: 0
+    - _ZTest: 4
+    - _ZWrite: 0
+    - _ZWriteControl: 0
     m_Colors:
-    - _DistortionSpeed: {r: 1.08, g: -0.66, b: 0, a: 0}
+    - _Color: {r: 0, g: 0, b: 0, a: 1}
+    - _Emission: {r: 0.050173707, g: 0.0026268957, b: 0.042555712, a: 0}
+    - _MainTexSpeed: {r: 0, g: -1, b: 0, a: 0}
+    - _MainTextTilling: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
---- !u!114 &1302708201085820623
+--- !u!114 &5396258044399524424
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
