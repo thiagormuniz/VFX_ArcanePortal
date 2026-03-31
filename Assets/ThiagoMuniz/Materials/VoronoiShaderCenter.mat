@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: VoronoiShaderMiddle
+  m_Name: VoronoiShaderCenter
   m_Shader: {fileID: -6465566751694194690, guid: 26b964f274ca64422b05d42d95aa5fb0,
     type: 3}
   m_ValidKeywords:
@@ -47,18 +47,19 @@ Material:
     - _CastShadows: 1
     - _Cull: 0
     - _DstBlend: 10
+    - _PowerNoise: 1
     - _QueueControl: 0
     - _QueueOffset: 0
     - _SrcBlend: 5
     - _Surface: 1
     - _VoronoTwirlStrength: 8
     - _VoronoiScale: 5
-    - _VoronoiSpeed: 4.85
+    - _VoronoiSpeed: 4.6
     - _ZTest: 4
     - _ZWrite: 0
     - _ZWriteControl: 0
     m_Colors:
-    - _Color: {r: 353.89807, g: 180.70587, b: 766.9961, a: 1}
+    - _Color: {r: 47.52625, g: 0, b: 88.97355, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &2139362132200593686
 MonoBehaviour:
